@@ -21,6 +21,10 @@ class InterfaceController: WKInterfaceController {
         self.fetchDataFromCurrencyFeed()
     }
 
+    @IBAction func refreshClick() {
+        self.data.removeAll(keepCapacity: false)
+        self.fetchDataFromCurrencyFeed()
+    }
     private func loadTableData() {
         table.setNumberOfRows(data.count, withRowType: "TableRowController")
         

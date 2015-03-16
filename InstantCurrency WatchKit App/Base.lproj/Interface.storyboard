@@ -11,6 +11,12 @@
                 <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="InstantCurrency_WatchKit_App" customModuleProvider="target">
                     <items>
                         <label alignment="left" text="Conversion to IDR" minimumScaleFactor="0.60000000000000009" id="wNl-zc-4xp"/>
+                        <button width="61" height="27.5" alignment="center" title="Refresh" id="9C3-2Z-KG9">
+                            <fontDescription key="font" type="system" pointSize="12"/>
+                            <connections>
+                                <action selector="refreshClick" destination="AgC-eL-Hgc" id="hLZ-tV-VX7"/>
+                            </connections>
+                        </button>
                         <table alignment="left" id="bdM-em-L13">
                             <items>
                                 <tableRow identifier="TableRowController" id="Si4-9T-E8i" customClass="TableRowController" customModule="InstantCurrency_WatchKit_Extension">
