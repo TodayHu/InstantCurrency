@@ -8,7 +8,7 @@
 
 import WatchKit
 import Foundation
-
+import Alamofire
 
 class InterfaceController: WKInterfaceController {
 
@@ -20,6 +20,7 @@ class InterfaceController: WKInterfaceController {
         
         data = [["USD":1000],["JPY": 1], ["GBP": 23], ["AUD":1000], ["EUR": 1]]
         self.loadTableData()
+        self.fetchDataFromCurrencyFeed()
     }
 
     private func loadTableData() {
@@ -43,5 +44,13 @@ class InterfaceController: WKInterfaceController {
         // This method is called when watch view controller is no longer visible
         super.didDeactivate()
     }
-
+    
+    func fetchDataFromCurrencyFeed(){
+        Alamofire.request(.GET, "http://query.yahooapis.com/v1/public/yql?q=select%20*%20from%20yahoo.finance.xchange%20where%20pair%20in%20(%22EURIDR%22,%20%22USDIDR%22,%20%22AUDIDR%22)&env=store://datatables.org/alltableswithkeys", parameters: nil)
+            .response { (request, response, data, error) in
+                println(response)
+                println(error)
+                println("data : \(data)")
+        }
+    }
 }
