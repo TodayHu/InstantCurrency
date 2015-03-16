@@ -14,6 +14,14 @@
 		AD6DEBCC1AB6C474009CDC60 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6DEBCB1AB6C474009CDC60 /* Images.xcassets */; };
 		AD6DEBCF1AB6C474009CDC60 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = AD6DEBCD1AB6C474009CDC60 /* LaunchScreen.xib */; };
 		AD6DEBDB1AB6C474009CDC60 /* InstantCurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DEBDA1AB6C474009CDC60 /* InstantCurrencyTests.swift */; };
+		AD6DEBEE1AB6C49C009CDC60 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DEBED1AB6C49C009CDC60 /* InterfaceController.swift */; };
+		AD6DEBF01AB6C49C009CDC60 /* NotificationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DEBEF1AB6C49C009CDC60 /* NotificationController.swift */; };
+		AD6DEBF21AB6C49C009CDC60 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6DEBF11AB6C49C009CDC60 /* Images.xcassets */; };
+		AD6DEBF61AB6C49C009CDC60 /* InstantCurrency WatchKit App.app in Resources */ = {isa = PBXBuildFile; fileRef = AD6DEBF51AB6C49C009CDC60 /* InstantCurrency WatchKit App.app */; };
+		AD6DEBFE1AB6C49C009CDC60 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AD6DEBFC1AB6C49C009CDC60 /* Interface.storyboard */; };
+		AD6DEC001AB6C49C009CDC60 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AD6DEBFF1AB6C49C009CDC60 /* Images.xcassets */; };
+		AD6DEC031AB6C49C009CDC60 /* InstantCurrency WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = AD6DEBE81AB6C49C009CDC60 /* InstantCurrency WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		AD6DEC0C1AB6C8A1009CDC60 /* TableRowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AD6DEC0B1AB6C8A1009CDC60 /* TableRowController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -24,7 +32,35 @@
 			remoteGlobalIDString = AD6DEBBB1AB6C474009CDC60;
 			remoteInfo = InstantCurrency;
 		};
+		AD6DEBF71AB6C49C009CDC60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD6DEBB41AB6C474009CDC60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD6DEBF41AB6C49C009CDC60;
+			remoteInfo = "InstantCurrency WatchKit App";
+		};
+		AD6DEC011AB6C49C009CDC60 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = AD6DEBB41AB6C474009CDC60 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = AD6DEBE71AB6C49C009CDC60;
+			remoteInfo = "InstantCurrency WatchKit Extension";
+		};
 /* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		AD6DEC0A1AB6C49C009CDC60 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				AD6DEC031AB6C49C009CDC60 /* InstantCurrency WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		AD6DEBBC1AB6C474009CDC60 /* InstantCurrency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = InstantCurrency.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -38,6 +74,17 @@
 		AD6DEBD41AB6C474009CDC60 /* InstantCurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = InstantCurrencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		AD6DEBD91AB6C474009CDC60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AD6DEBDA1AB6C474009CDC60 /* InstantCurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InstantCurrencyTests.swift; sourceTree = "<group>"; };
+		AD6DEBE81AB6C49C009CDC60 /* InstantCurrency WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "InstantCurrency WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6DEBEB1AB6C49C009CDC60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6DEBEC1AB6C49C009CDC60 /* PushNotificationPayload.apns */ = {isa = PBXFileReference; lastKnownFileType = text; path = PushNotificationPayload.apns; sourceTree = "<group>"; };
+		AD6DEBED1AB6C49C009CDC60 /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		AD6DEBEF1AB6C49C009CDC60 /* NotificationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationController.swift; sourceTree = "<group>"; };
+		AD6DEBF11AB6C49C009CDC60 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD6DEBF51AB6C49C009CDC60 /* InstantCurrency WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "InstantCurrency WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD6DEBFB1AB6C49C009CDC60 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		AD6DEBFD1AB6C49C009CDC60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		AD6DEBFF1AB6C49C009CDC60 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		AD6DEC0B1AB6C8A1009CDC60 /* TableRowController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TableRowController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +102,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD6DEBE51AB6C49C009CDC60 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -63,6 +117,8 @@
 			children = (
 				AD6DEBBE1AB6C474009CDC60 /* InstantCurrency */,
 				AD6DEBD71AB6C474009CDC60 /* InstantCurrencyTests */,
+				AD6DEBE91AB6C49C009CDC60 /* InstantCurrency WatchKit Extension */,
+				AD6DEBF91AB6C49C009CDC60 /* InstantCurrency WatchKit App */,
 				AD6DEBBD1AB6C474009CDC60 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +128,8 @@
 			children = (
 				AD6DEBBC1AB6C474009CDC60 /* InstantCurrency.app */,
 				AD6DEBD41AB6C474009CDC60 /* InstantCurrencyTests.xctest */,
+				AD6DEBE81AB6C49C009CDC60 /* InstantCurrency WatchKit Extension.appex */,
+				AD6DEBF51AB6C49C009CDC60 /* InstantCurrency WatchKit App.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -115,6 +173,45 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		AD6DEBE91AB6C49C009CDC60 /* InstantCurrency WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				AD6DEC0B1AB6C8A1009CDC60 /* TableRowController.swift */,
+				AD6DEBED1AB6C49C009CDC60 /* InterfaceController.swift */,
+				AD6DEBEF1AB6C49C009CDC60 /* NotificationController.swift */,
+				AD6DEBF11AB6C49C009CDC60 /* Images.xcassets */,
+				AD6DEBEA1AB6C49C009CDC60 /* Supporting Files */,
+			);
+			path = "InstantCurrency WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		AD6DEBEA1AB6C49C009CDC60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD6DEBEB1AB6C49C009CDC60 /* Info.plist */,
+				AD6DEBEC1AB6C49C009CDC60 /* PushNotificationPayload.apns */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		AD6DEBF91AB6C49C009CDC60 /* InstantCurrency WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				AD6DEBFC1AB6C49C009CDC60 /* Interface.storyboard */,
+				AD6DEBFF1AB6C49C009CDC60 /* Images.xcassets */,
+				AD6DEBFA1AB6C49C009CDC60 /* Supporting Files */,
+			);
+			path = "InstantCurrency WatchKit App";
+			sourceTree = "<group>";
+		};
+		AD6DEBFA1AB6C49C009CDC60 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				AD6DEBFB1AB6C49C009CDC60 /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -125,10 +222,12 @@
 				AD6DEBB81AB6C474009CDC60 /* Sources */,
 				AD6DEBB91AB6C474009CDC60 /* Frameworks */,
 				AD6DEBBA1AB6C474009CDC60 /* Resources */,
+				AD6DEC0A1AB6C49C009CDC60 /* Embed App Extensions */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				AD6DEC021AB6C49C009CDC60 /* PBXTargetDependency */,
 			);
 			name = InstantCurrency;
 			productName = InstantCurrency;
@@ -153,6 +252,39 @@
 			productReference = AD6DEBD41AB6C474009CDC60 /* InstantCurrencyTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
+		AD6DEBE71AB6C49C009CDC60 /* InstantCurrency WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD6DEC071AB6C49C009CDC60 /* Build configuration list for PBXNativeTarget "InstantCurrency WatchKit Extension" */;
+			buildPhases = (
+				AD6DEBE41AB6C49C009CDC60 /* Sources */,
+				AD6DEBE51AB6C49C009CDC60 /* Frameworks */,
+				AD6DEBE61AB6C49C009CDC60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				AD6DEBF81AB6C49C009CDC60 /* PBXTargetDependency */,
+			);
+			name = "InstantCurrency WatchKit Extension";
+			productName = "InstantCurrency WatchKit Extension";
+			productReference = AD6DEBE81AB6C49C009CDC60 /* InstantCurrency WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit-extension";
+		};
+		AD6DEBF41AB6C49C009CDC60 /* InstantCurrency WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = AD6DEC041AB6C49C009CDC60 /* Build configuration list for PBXNativeTarget "InstantCurrency WatchKit App" */;
+			buildPhases = (
+				AD6DEBF31AB6C49C009CDC60 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "InstantCurrency WatchKit App";
+			productName = "InstantCurrency WatchKit App";
+			productReference = AD6DEBF51AB6C49C009CDC60 /* InstantCurrency WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -168,6 +300,12 @@
 					AD6DEBD31AB6C474009CDC60 = {
 						CreatedOnToolsVersion = 6.2;
 						TestTargetID = AD6DEBBB1AB6C474009CDC60;
+					};
+					AD6DEBE71AB6C49C009CDC60 = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					AD6DEBF41AB6C49C009CDC60 = {
+						CreatedOnToolsVersion = 6.2;
 					};
 				};
 			};
@@ -186,6 +324,8 @@
 			targets = (
 				AD6DEBBB1AB6C474009CDC60 /* InstantCurrency */,
 				AD6DEBD31AB6C474009CDC60 /* InstantCurrencyTests */,
+				AD6DEBE71AB6C49C009CDC60 /* InstantCurrency WatchKit Extension */,
+				AD6DEBF41AB6C49C009CDC60 /* InstantCurrency WatchKit App */,
 			);
 		};
 /* End PBXProject section */
@@ -205,6 +345,24 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6DEBE61AB6C49C009CDC60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6DEBF61AB6C49C009CDC60 /* InstantCurrency WatchKit App.app in Resources */,
+				AD6DEBF21AB6C49C009CDC60 /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		AD6DEBF31AB6C49C009CDC60 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6DEBFE1AB6C49C009CDC60 /* Interface.storyboard in Resources */,
+				AD6DEC001AB6C49C009CDC60 /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -229,6 +387,16 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		AD6DEBE41AB6C49C009CDC60 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD6DEBF01AB6C49C009CDC60 /* NotificationController.swift in Sources */,
+				AD6DEC0C1AB6C8A1009CDC60 /* TableRowController.swift in Sources */,
+				AD6DEBEE1AB6C49C009CDC60 /* InterfaceController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
@@ -236,6 +404,16 @@
 			isa = PBXTargetDependency;
 			target = AD6DEBBB1AB6C474009CDC60 /* InstantCurrency */;
 			targetProxy = AD6DEBD51AB6C474009CDC60 /* PBXContainerItemProxy */;
+		};
+		AD6DEBF81AB6C49C009CDC60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD6DEBF41AB6C49C009CDC60 /* InstantCurrency WatchKit App */;
+			targetProxy = AD6DEBF71AB6C49C009CDC60 /* PBXContainerItemProxy */;
+		};
+		AD6DEC021AB6C49C009CDC60 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = AD6DEBE71AB6C49C009CDC60 /* InstantCurrency WatchKit Extension */;
+			targetProxy = AD6DEC011AB6C49C009CDC60 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -254,6 +432,14 @@
 				AD6DEBCE1AB6C474009CDC60 /* Base */,
 			);
 			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+		AD6DEBFC1AB6C49C009CDC60 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				AD6DEBFD1AB6C49C009CDC60 /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -340,6 +526,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = InstantCurrency/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -350,6 +537,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				INFOPLIST_FILE = InstantCurrency/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -390,6 +578,60 @@
 			};
 			name = Release;
 		};
+		AD6DEC051AB6C49C009CDC60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				IBSC_MODULE = InstantCurrency_WatchKit_Extension;
+				INFOPLIST_FILE = "InstantCurrency WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Debug;
+		};
+		AD6DEC061AB6C49C009CDC60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				IBSC_MODULE = InstantCurrency_WatchKit_Extension;
+				INFOPLIST_FILE = "InstantCurrency WatchKit App/Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = 4;
+				"TARGETED_DEVICE_FAMILY[sdk=iphonesimulator*]" = "1,4";
+			};
+			name = Release;
+		};
+		AD6DEC081AB6C49C009CDC60 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "InstantCurrency WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		AD6DEC091AB6C49C009CDC60 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "InstantCurrency WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -415,6 +657,22 @@
 			buildConfigurations = (
 				AD6DEBE21AB6C474009CDC60 /* Debug */,
 				AD6DEBE31AB6C474009CDC60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD6DEC041AB6C49C009CDC60 /* Build configuration list for PBXNativeTarget "InstantCurrency WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6DEC051AB6C49C009CDC60 /* Debug */,
+				AD6DEC061AB6C49C009CDC60 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		AD6DEC071AB6C49C009CDC60 /* Build configuration list for PBXNativeTarget "InstantCurrency WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				AD6DEC081AB6C49C009CDC60 /* Debug */,
+				AD6DEC091AB6C49C009CDC60 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
