@@ -16,8 +16,12 @@
                                 <tableRow identifier="TableRowController" id="Si4-9T-E8i" customClass="TableRowController" customModule="InstantCurrency_WatchKit_Extension">
                                     <group key="rootItem" width="1" alignment="left" id="xNj-lR-Fee">
                                         <items>
-                                            <label alignment="left" verticalAlignment="center" text="Cur" textAlignment="center" id="ezr-d0-AH9"/>
-                                            <label width="47" alignment="right" verticalAlignment="center" text="Value" textAlignment="center" id="tzc-Fb-Joh"/>
+                                            <label alignment="left" verticalAlignment="center" text="Cur" textAlignment="center" minimumScaleFactor="0.20000000000000001" id="ezr-d0-AH9">
+                                                <fontDescription key="font" style="UICTFontTextStyleBody"/>
+                                            </label>
+                                            <label width="76" alignment="right" verticalAlignment="center" text="Value" textAlignment="center" minimumScaleFactor="0.29999999999999999" id="tzc-Fb-Joh">
+                                                <fontDescription key="font" style="UICTFontTextStyleCaption1"/>
+                                            </label>
                                         </items>
                                     </group>
                                     <connections>

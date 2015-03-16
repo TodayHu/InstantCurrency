@@ -3,3 +3,4 @@ platform :ios, '8.0'
 use_frameworks!
 
 pod 'Alamofire', '1.1.4'
+pod 'SWXMLHash', '0.6.4'
